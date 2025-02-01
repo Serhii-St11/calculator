@@ -10,12 +10,9 @@ buttonClick.addEventListener("click", function (event) {
     } else if (value === "=") {
       try {
         let expression = input.value;
-
-        // Ищем проценты и заменяем "30%" на "предыдущее число * 30 / 100"
         expression = expression.replace(/(\d+)%/g, (match, percentValue) => {
-          // Находим предыдущее число перед оператором (если есть)
           let baseMatch = expression.match(/(\d+)(?=[\+\-\*\/]\d+%)/);
-          let baseNumber = baseMatch ? baseMatch[1] : "0"; // Если не найдено, используем 0
+          let baseNumber = baseMatch ? baseMatch[1] : "0"; 
           return `(${baseNumber} * ${percentValue} / 100)`;
         });
 
