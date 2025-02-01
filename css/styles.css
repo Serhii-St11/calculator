@@ -16,7 +16,6 @@ button {
     padding-top: 10px;
      padding-bottom: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-      /* box-shadow: 0 0 15px 5px rgb(50, 197, 197); */
 
 }
 
@@ -30,9 +29,6 @@ button {
     height: 300px;
     margin: auto;
    border-radius: 40px;
-   
-
-
 }
 
 .text {
@@ -42,8 +38,6 @@ button {
    width: 300px;
    margin: 5px auto;
    border-radius: 15px;
-   
- 
 }
 
 .number-btn {
@@ -52,7 +46,6 @@ button {
     height: 60px;
     border: none;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-     /* box-shadow: inset 5px 5px 10px rgba(6, 190, 236, 0.5); */
 }
 
 .number-btn:hover{
